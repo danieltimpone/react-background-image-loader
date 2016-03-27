@@ -1,2 +1,22 @@
 # react-background-image-loader
 Allows you display a placeholder image while the actual background image loads
+
+## Installation
+`npm install react-background-image-loader --save`
+
+## Usage
+```javascript
+  import React from 'react';
+  import BackgroundImage from 'react-background-image-loader';
+
+  export default (props) => {
+    const {source, ...otherProps} = props;
+    const localImage = '/path/to/local/asset';
+
+    return(
+      <BackgroundImage img={source} placeholder={localImage} {...otherProps}>
+        {...child components}
+      </BackgroundImage>
+    );
+  }
+```
