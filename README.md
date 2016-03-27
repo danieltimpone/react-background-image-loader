@@ -20,3 +20,9 @@ Allows you display a placeholder image while the actual background image loads
     );
   }
 ```
+
+## Props
+prop        | type   | notes
+------------|--------|-----------------------------------------
+img         | string | Remote image to be loaded
+placeholder | string | Local image to be immediately displayed
