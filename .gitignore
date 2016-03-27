@@ -1,0 +1,9 @@
+# exclude osx meta-files
+.DS_Store
+.npmignore
+.npmrc
+# exclude all node_modules
+node_modules/
+
+# ignore npm error logs
+npm-debug.log
