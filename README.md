@@ -15,7 +15,10 @@ Allows you display a placeholder image while the actual background image loads
 
     return(
       <BackgroundImage img={source} placeholder={localImage} {...otherProps}>
-        {...child components}
+        <div className="something-else">
+          Some more markup
+        </div>
+        <SomeOtherReactComponent />
       </BackgroundImage>
     );
   }
