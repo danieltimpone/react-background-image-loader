@@ -29,3 +29,7 @@ prop        | type   | notes
 ------------|--------|-----------------------------------------
 img         | string | Remote image to be loaded
 placeholder | string | Local image to be immediately displayed
+
+## License
+
+MIT License
