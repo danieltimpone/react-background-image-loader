@@ -14,7 +14,7 @@ Allows you display a placeholder image while the actual background image loads
     const localImage = '/path/to/local/asset';
 
     return(
-      <BackgroundImage img={source} placeholder={localImage} {...otherProps}>
+      <BackgroundImage src={source} placeholder={localImage} {...otherProps}>
         <div className="something-else">
           Some more markup
         </div>
@@ -27,7 +27,7 @@ Allows you display a placeholder image while the actual background image loads
 ## Props
 prop        | type   | notes
 ------------|--------|-----------------------------------------
-img         | string | Remote image to be loaded
+src         | string | Remote image to be loaded
 placeholder | string | Local image to be immediately displayed
 
 ## License
