@@ -42,7 +42,7 @@ var BackgroundLoader = (function (_React$Component) {
         placeholder: _react.PropTypes.string.isRequired,
         className: _react.PropTypes.string,
         style: _react.PropTypes.object,
-        children: _react.PropTypes.object
+        children: _react.PropTypes.node
       };
     }
   }]);
@@ -80,6 +80,8 @@ var BackgroundLoader = (function (_React$Component) {
   }, {
     key: 'componentWillUnmount',
     value: function componentWillUnmount() {
+      this.image.onerror = null;
+      this.image.onload = null;
       this.image = null;
     }
   }, {
