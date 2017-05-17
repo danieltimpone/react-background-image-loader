@@ -4,6 +4,8 @@ Allows you display a placeholder image while the actual background image loads
 ## Installation
 `npm install react-background-image-loader --save`
 
+In order to build / modify the component locally just run `npm watch`.
+
 ## Usage
 ```javascript
   import React from 'react';

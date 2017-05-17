@@ -22,11 +22,15 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 /*
   This component displays a placeholder image that is hosted locally
   while it waits for a remote image to load.
 
-  Usage: <BackgroundImage img={source} placeholder={localImage} {...other attributes}>
+  Usage: <BackgroundImage src={source} placeholder={localImage} {...other attributes}>
         {...child components}
        </BackgroundImage>
 */
@@ -38,11 +42,11 @@ var BackgroundLoader = (function (_React$Component) {
     key: 'propTypes',
     get: function get() {
       return {
-        src: _react.PropTypes.string.isRequired,
-        placeholder: _react.PropTypes.string.isRequired,
-        className: _react.PropTypes.string,
-        style: _react.PropTypes.object,
-        children: _react.PropTypes.node
+        src: _propTypes2['default'].string.isRequired,
+        placeholder: _propTypes2['default'].string.isRequired,
+        className: _propTypes2['default'].string,
+        style: _propTypes2['default'].object,
+        children: _propTypes2['default'].node
       };
     }
   }]);
